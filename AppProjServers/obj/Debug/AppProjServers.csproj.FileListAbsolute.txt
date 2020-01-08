@@ -1,0 +1,13 @@
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\bin\Debug\AppProjServers.exe.config
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\bin\Debug\AppProjServers.exe
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\bin\Debug\AppProjServers.pdb
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\bin\Debug\System.Data.SQLite.dll
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\bin\Debug\System.Data.SQLite.xml
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\obj\Debug\AppProjServers.csprojAssemblyReference.cache
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\obj\Debug\AppProjServers.Form1.resources
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\obj\Debug\AppProjServers.Properties.Resources.resources
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\obj\Debug\AppProjServers.csproj.GenerateResource.cache
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\obj\Debug\AppProjServers.csproj.CopyComplete
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\obj\Debug\AppProjServers.exe
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProjServers\obj\Debug\AppProjServers.pdb

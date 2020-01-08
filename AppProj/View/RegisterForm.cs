@@ -16,7 +16,7 @@ namespace AppProj.View
 {
     public partial class RegisterForm : Form
     {
-        private UserData _data = new UserData();
+        public static UserData _data = new UserData();
         private bool firstNameCheck = false;
         private bool lastNameCheck = false;
         private bool usernameCheck = false;
@@ -214,6 +214,7 @@ namespace AppProj.View
 
             LogInModel login = new LogInModel();
             LogInData loginData = new LogInData();
+            LogInData.ViaAction = "REGISTER";
 
             loginData.Username = _data.Username;
             loginData.Password = _data.Password;

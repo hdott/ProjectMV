@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nhori\\Git\\AsymmetricEncriptionAssembly\\AsymmetricEncriptionAssembly.csproj": {}
+    "C:\\Users\\nhori\\Git\\ProjectMV\\ProjectMV\\AsymmetricEncriptionAssembly\\AsymmetricEncriptionAssembly.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nhori\\Git\\AsymmetricEncriptionAssembly\\AsymmetricEncriptionAssembly.csproj": {
+    "C:\\Users\\nhori\\Git\\ProjectMV\\ProjectMV\\AsymmetricEncriptionAssembly\\AsymmetricEncriptionAssembly.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nhori\\Git\\AsymmetricEncriptionAssembly\\AsymmetricEncriptionAssembly.csproj",
+        "projectUniqueName": "C:\\Users\\nhori\\Git\\ProjectMV\\ProjectMV\\AsymmetricEncriptionAssembly\\AsymmetricEncriptionAssembly.csproj",
         "projectName": "AsymmetricEncriptionAssembly",
-        "projectPath": "C:\\Users\\nhori\\Git\\AsymmetricEncriptionAssembly\\AsymmetricEncriptionAssembly.csproj",
+        "projectPath": "C:\\Users\\nhori\\Git\\ProjectMV\\ProjectMV\\AsymmetricEncriptionAssembly\\AsymmetricEncriptionAssembly.csproj",
         "packagesPath": "C:\\Users\\nhori\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nhori\\Git\\AsymmetricEncriptionAssembly\\obj\\",
+        "outputPath": "C:\\Users\\nhori\\Git\\ProjectMV\\ProjectMV\\AsymmetricEncriptionAssembly\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

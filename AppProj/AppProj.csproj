@@ -78,6 +78,8 @@
     <Compile Include="Clients\LogInClient.cs" />
     <Compile Include="Clients\RegisterClient.cs" />
     <Compile Include="Data\ChatData.cs" />
+    <Compile Include="Data\ChatDataConstants.cs" />
+    <Compile Include="Data\Compress.cs" />
     <Compile Include="Data\LogInData.cs" />
     <Compile Include="Data\UserData.cs" />
     <Compile Include="Model\ChatModel.cs" />

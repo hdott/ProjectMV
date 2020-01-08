@@ -9,8 +9,10 @@ namespace AppProj.Data
 {
     class ChatData
     {
+        public Int32 Action { get; set; }
         public string Message { get; set; }
         public string Date { get; set; }
+        public string TargetUser { get; set; }
 
         public byte[] Serialize()
         {
@@ -18,8 +20,10 @@ namespace AppProj.Data
             {
                 using (BinaryWriter writer = new BinaryWriter(m))
                 {
+                    writer.Write(Action);
                     writer.Write(Message);
                     writer.Write(Date);
+                    writer.Write(TargetUser);
                 }
 
                 return m.ToArray();
@@ -34,8 +38,10 @@ namespace AppProj.Data
             {
                 using (BinaryReader reader = new BinaryReader(m))
                 {
+                    obj.Action = reader.ReadInt32();
                     obj.Message = reader.ReadString();
                     obj.Date = reader.ReadString();
+                    obj.TargetUser = reader.ReadString();
                 }
             }
 

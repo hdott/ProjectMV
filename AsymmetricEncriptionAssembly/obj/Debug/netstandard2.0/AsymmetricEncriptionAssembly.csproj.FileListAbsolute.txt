@@ -1,0 +1,8 @@
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AsymmetricEncriptionAssembly\bin\Debug\netstandard2.0\AsymmetricEncriptionAssembly.deps.json
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AsymmetricEncriptionAssembly\bin\Debug\netstandard2.0\AsymmetricEncriptionAssembly.dll
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AsymmetricEncriptionAssembly\bin\Debug\netstandard2.0\AsymmetricEncriptionAssembly.pdb
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AsymmetricEncriptionAssembly\obj\Debug\netstandard2.0\AsymmetricEncriptionAssembly.csprojAssemblyReference.cache
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AsymmetricEncriptionAssembly\obj\Debug\netstandard2.0\AsymmetricEncriptionAssembly.AssemblyInfoInputs.cache
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AsymmetricEncriptionAssembly\obj\Debug\netstandard2.0\AsymmetricEncriptionAssembly.AssemblyInfo.cs
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AsymmetricEncriptionAssembly\obj\Debug\netstandard2.0\AsymmetricEncriptionAssembly.dll
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AsymmetricEncriptionAssembly\obj\Debug\netstandard2.0\AsymmetricEncriptionAssembly.pdb

@@ -51,7 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connexions\User.cs" />
+    <Compile Include="Connexions\OnlineConnexions.cs" />
     <Compile Include="DataBase\Database.cs" />
+    <Compile Include="Data\ChatData.cs" />
+    <Compile Include="Data\ChatDataConstants.cs" />
+    <Compile Include="Data\Compress.cs" />
     <Compile Include="Data\LogInData.cs" />
     <Compile Include="Data\UserData.cs" />
     <Compile Include="Form1.cs">
@@ -60,8 +65,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Listeners\ChatListener.cs" />
     <Compile Include="Listeners\LogInListener.cs" />
     <Compile Include="Listeners\RegisterListener.cs" />
+    <Compile Include="Output.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

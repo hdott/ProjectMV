@@ -59,8 +59,9 @@
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.logOutToolStripMenuItem.Text = "LogOut";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -78,12 +79,14 @@
             // 
             // chatInputTextBox
             // 
+            this.chatInputTextBox.AcceptsReturn = true;
             this.chatInputTextBox.Location = new System.Drawing.Point(178, 325);
-            this.chatInputTextBox.MaxLength = 256;
+            this.chatInputTextBox.MaxLength = 512;
             this.chatInputTextBox.Multiline = true;
             this.chatInputTextBox.Name = "chatInputTextBox";
             this.chatInputTextBox.Size = new System.Drawing.Size(311, 84);
             this.chatInputTextBox.TabIndex = 3;
+            this.chatInputTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chatInputTextBox_KeyDown);
             // 
             // AppProjForm
             // 
@@ -95,7 +98,9 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AppProjForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AppProjForm";
+            this.Load += new System.EventHandler(this.AppProjForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

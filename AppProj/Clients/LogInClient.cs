@@ -13,7 +13,7 @@ namespace AppProj.Clients
         private static LogInClient instance = null;
         private static readonly object padlock = new object();
         
-        private string _server = "192.168.0.153";
+        private string _server = "79.119.218.35";
         private Int32 _port = 55555;
         TcpClient client = null;
         NetworkStream stream = null;

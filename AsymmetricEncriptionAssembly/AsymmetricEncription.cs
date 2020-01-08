@@ -10,7 +10,7 @@ namespace AsymmetricEncriptionAssembly
         private string _privateKey;
         public AsymmetricEncription()
         {
-            rsa = new RSACryptoServiceProvider();
+            rsa = new RSACryptoServiceProvider(512);
 
             _publicKey = rsa.ToXmlString(false);
             _privateKey = rsa.ToXmlString(true);
@@ -28,7 +28,7 @@ namespace AsymmetricEncriptionAssembly
 
         public byte[] Encription(string publicKey, byte[] data)
         {
-            using (RSACryptoServiceProvider rsa = new RSACryptoServiceProvider())
+            using (RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(512))
             {
                 rsa.FromXmlString(publicKey);
 
@@ -38,7 +38,7 @@ namespace AsymmetricEncriptionAssembly
 
         public byte[] Decription(string privateKey, byte[] data)
         {
-            using (RSACryptoServiceProvider rsa = new RSACryptoServiceProvider())
+            using (RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(512))
             {
                 rsa.FromXmlString(privateKey);
 

@@ -1,0 +1,15 @@
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\bin\Debug\AppProj.exe.config
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\bin\Debug\AppProj.exe.manifest
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\bin\Debug\AppProj.application
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\bin\Debug\AppProj.exe
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\bin\Debug\AppProj.pdb
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\obj\Debug\AppProj.csprojAssemblyReference.cache
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\obj\Debug\AppProj.Properties.Resources.resources
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\obj\Debug\AppProj.View.AppProjForm.resources
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\obj\Debug\AppProj.LoginForm.resources
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\obj\Debug\AppProj.View.RegisterForm.resources
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\obj\Debug\AppProj.csproj.GenerateResource.cache
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\obj\Debug\AppProj.exe.manifest
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\obj\Debug\AppProj.application
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\obj\Debug\AppProj.exe
+C:\Users\nhori\Git\ProjectMV\ProjectMV\AppProj\obj\Debug\AppProj.pdb

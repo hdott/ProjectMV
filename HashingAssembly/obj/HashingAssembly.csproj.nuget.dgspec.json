@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nhori\\Git\\HashingAssembly\\HashingAssembly.csproj": {}
+    "C:\\Users\\nhori\\Git\\ProjectMV\\ProjectMV\\HashingAssembly\\HashingAssembly.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nhori\\Git\\HashingAssembly\\HashingAssembly.csproj": {
+    "C:\\Users\\nhori\\Git\\ProjectMV\\ProjectMV\\HashingAssembly\\HashingAssembly.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nhori\\Git\\HashingAssembly\\HashingAssembly.csproj",
+        "projectUniqueName": "C:\\Users\\nhori\\Git\\ProjectMV\\ProjectMV\\HashingAssembly\\HashingAssembly.csproj",
         "projectName": "HashingAssembly",
-        "projectPath": "C:\\Users\\nhori\\Git\\HashingAssembly\\HashingAssembly.csproj",
+        "projectPath": "C:\\Users\\nhori\\Git\\ProjectMV\\ProjectMV\\HashingAssembly\\HashingAssembly.csproj",
         "packagesPath": "C:\\Users\\nhori\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nhori\\Git\\HashingAssembly\\obj\\",
+        "outputPath": "C:\\Users\\nhori\\Git\\ProjectMV\\ProjectMV\\HashingAssembly\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

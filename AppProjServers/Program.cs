@@ -16,14 +16,14 @@ namespace AppProjServers
         [STAThread]
         static void Main()
         {
-            Thread tLogInListener = new Thread(new ThreadStart(LogInListenerWork));
-            tLogInListener.Start();
+            //Thread tLogInListener = new Thread(new ThreadStart(LogInListenerWork));
+            //tLogInListener.Start();
 
-            Thread tRegisterListener = new Thread(new ThreadStart(RegisterListenerWork));
-            tRegisterListener.Start();
+            //Thread tRegisterListener = new Thread(new ThreadStart(RegisterListenerWork));
+            //tRegisterListener.Start();
 
-            tLogInListener.Join();
-            tRegisterListener.Join();
+            //tLogInListener.Join();
+            //tRegisterListener.Join();
             
 
             Application.EnableVisualStyles();
@@ -31,16 +31,16 @@ namespace AppProjServers
             Application.Run(new Form1());
         }
 
-        static void LogInListenerWork()
-        {
-            LogInListener listenLogIn = LogInListener.Instance;
-            listenLogIn.Listener();
-        }
+        //static void LogInListenerWork()
+        //{
+        //    LogInListener listenLogIn = LogInListener.Instance;
+        //    listenLogIn.Listener();
+        //}
 
-        static void RegisterListenerWork()
-        {
-            RegisterListener listenRegister = RegisterListener.Instance;
-            listenRegister.Listener();
-        }
+        //static void RegisterListenerWork()
+        //{
+        //    RegisterListener listenRegister = RegisterListener.Instance;
+        //    listenRegister.Listener();
+        //}
     }
 }

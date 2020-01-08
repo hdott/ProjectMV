@@ -1,9 +1,11 @@
-﻿using System;
+﻿using AppProj.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,7 +17,7 @@ namespace AppProj.Clients
         private static ChatClient instance = null;
         private static readonly object padlock = new object();
 
-        private string _server = "192.168.0.153";
+        private string _server = "79.119.218.35";
         private Int32 _port = 55557;
         TcpClient client = null;
         NetworkStream stream = null;
@@ -27,10 +29,17 @@ namespace AppProj.Clients
         private MethodInfo Decription = null;
         private object instanceEncript = null;
 
+        private byte[] _publicKeyToEncrypt = new byte[256];
+        private byte[] _publicKeyToGive = new byte[256];
+        private ManualResetEvent _threadControl = new ManualResetEvent(true);
+
         public ChatClient()
         {
             client = new TcpClient(_server, _port);
             stream = client.GetStream();
+
+            //Thread t = new Thread(new ThreadStart(() => Listener()));
+            //t.Start();
         }
 
         public static ChatClient Instance
@@ -49,31 +58,50 @@ namespace AppProj.Clients
             }
         }
 
-        public void SendMessage(byte[] data)
+        public void SendMessage(byte[] data, Int32 action)
         {
-            if (getToken)
+            _threadControl.Reset();
+
+            switch (action)
             {
-                byte[] publicKey = new byte[256];
-                stream.Read(publicKey, 0, publicKey.Length);
-                _token = System.Text.Encoding.ASCII.GetString(publicKey);
+                case ChatDataConstants.GeneralChat:
 
-                encript = Assembly.LoadFrom("AsymmetricEncriptionAssembly.dll");
-                type = encript.GetType("AsymmetricEncriptionAssembly.AsymmetricEncription");
-                Encription = type.GetMethod("Encription");
-                instanceEncript = Activator.CreateInstance(type);
+                    if (getToken)
+                    {
+                        stream.Read(_publicKeyToEncrypt, 0, _publicKeyToEncrypt.Length);
+                        _token = System.Text.Encoding.ASCII.GetString(_publicKeyToEncrypt);
 
-                getToken = false;
+                        encript = Assembly.LoadFrom("AsymmetricEncriptionAssembly.dll");
+                        type = encript.GetType("AsymmetricEncriptionAssembly.AsymmetricEncription");
+                        Encription = type.GetMethod("Encription");
+                        instanceEncript = Activator.CreateInstance(type);
+
+                        getToken = false;
+                    }
+
+                    Console.WriteLine(data.Length);
+                    var _data = Compress.Zip(data);
+
+                    Console.WriteLine(_data.Length);
+                    _data = (byte[])Encription.Invoke(instanceEncript, new object[] { _token, _data });
+
+                    Console.WriteLine(_data.Length);
+                    stream.Write(_data, 0, _data.Length);
+                    break;
             }
 
-            data = (byte[])Encription.Invoke(instanceEncript, new object[] { _token, data });
+            
 
-            Console.WriteLine(data.Length);
-            stream.Write(data, 0, data.Length);
+            _threadControl.Set();
         }
 
         public void Listener()
         {
+            while (true)
+            {
 
+                _threadControl.WaitOne(Timeout.Infinite);
+            }
         }
     }
 }

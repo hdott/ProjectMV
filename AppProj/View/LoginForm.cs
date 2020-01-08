@@ -21,7 +21,7 @@ namespace AppProj
 {
     public partial class LoginForm : Form
     {
-        private LogInData _data = new LogInData();
+        public static LogInData _data = new LogInData();
 
         public LoginForm()
         {
@@ -79,6 +79,7 @@ namespace AppProj
 
         private void logInButton_Click(object sender, EventArgs e)
         {
+            LogInData.ViaAction = "LOGIN";
             LogInModel model = new LogInModel();
 
             bool isConnected = model.LogInProcess(_data);
@@ -197,6 +198,30 @@ namespace AppProj
         private void rememberMeCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void LoginForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                logInButton_Click(sender, new EventArgs());
+            }
+        }
+
+        private void passwordTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                logInButton_Click(sender, new EventArgs());
+            }
+        }
+
+        private void usernameTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                logInButton_Click(sender, new EventArgs());
+            }
         }
     }
 }

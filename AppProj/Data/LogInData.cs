@@ -9,6 +9,7 @@ namespace AppProj.Data
 {
     public class LogInData
     {
+        public static string ViaAction { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
 

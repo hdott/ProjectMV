@@ -11,11 +11,11 @@ namespace AppProj.Model
 {
     class ChatModel
     {
-        public void SendMessage(ChatData data, TextBox output)
+        public void SendMessage(ChatData data, Int32 action)
         {
             byte[] _data = data.Serialize();
 
-            ChatClient.Instance.SendMessage(_data);
+            ChatClient.Instance.SendMessage(_data, action);
 
         }
     }

@@ -20,9 +20,9 @@ namespace AppProjServers.Listeners
         private RegisterListener()
         {
             Int32 port = 55556;
-            IPAddress addr = IPAddress.Parse("192.168.0.153");
+            //IPAddress addr = IPAddress.Parse("192.168.0.153");
 
-            server = new TcpListener(addr, port);
+            server = new TcpListener(port);
             server.Start();
         }
 
